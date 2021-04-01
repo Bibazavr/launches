@@ -1,6 +1,8 @@
 import "./Launch.css";
 
 import React from "react";
+import dayjs from "dayjs";
+import Typography from "@material-ui/core/Typography";
 
 import { ILaunch } from "../types";
 
@@ -18,10 +20,16 @@ export const Launch = (props: ILaunchProps): React.ReactElement => {
       />
       <div className={"content"}>
         <div className={"header"}>
-          <div>{launch.mission_name}</div>
-          <div>{launch.launch_date_local}</div>
+          <Typography variant={"h5"} color={"textPrimary"}>
+            {launch.mission_name}
+          </Typography>
+          <Typography color={"textSecondary"}>
+            {dayjs(launch.launch_date_local).format("DD.MM.YYYY")}
+          </Typography>
         </div>
-        <div className={"details"}>{launch.details || launch.upcoming}</div>
+        <Typography className={"details"}>
+          {launch.details || "upcoming"}
+        </Typography>
       </div>
     </div>
   );

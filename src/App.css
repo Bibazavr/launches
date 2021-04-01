@@ -1,7 +1,18 @@
-.App{
-  margin: 5px
+.App {
+  margin: 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .header {
   text-align: left;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1
 }
