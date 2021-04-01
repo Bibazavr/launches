@@ -1,8 +1,6 @@
 .container {
     display: flex;
-    flex: 1;
     margin: 10px;
-    max-height: 150px;
 }
 
 .img {
