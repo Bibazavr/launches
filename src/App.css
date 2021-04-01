@@ -16,3 +16,14 @@
   flex-direction: column;
   flex: 1
 }
+.selectors{
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.selectors > div {
+  display: flex;
+  flex: 1;
+  margin: 5px
+}

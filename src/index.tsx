@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -7,11 +8,9 @@ import { APIContext } from "./hoc/withAPI";
 import API from "./API";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <APIContext.Provider value={API}>
-      <App />
-    </APIContext.Provider>
-  </React.StrictMode>,
+  <APIContext.Provider value={API}>
+    <App />
+  </APIContext.Provider>,
   document.getElementById("root")
 );
 

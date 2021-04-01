@@ -2,6 +2,7 @@
     display: flex;
     flex: 1;
     margin: 10px;
+    max-height: 150px;
 }
 
 .img {
@@ -13,19 +14,19 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin: 5px
+    margin: 5px;
 }
 
 .content > .header {
     display: flex;
     flex: 1;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     flex-direction: row;
     margin: 0;
 }
 
-.details{
+.details {
     margin: 5px;
     flex: 1
 }
