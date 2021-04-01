@@ -44,13 +44,13 @@ function App(props: AppProps): React.ReactElement {
   useEffect(() => {
     let newFilterLaunches = launches;
     if (rocket) {
-      newFilterLaunches = launches.filter(
+      newFilterLaunches = newFilterLaunches.filter(
         (launch) => launch.rocket.rocket_name === rocket
       );
     }
 
     if (site) {
-      newFilterLaunches = launches.filter(
+      newFilterLaunches = newFilterLaunches.filter(
         (launch) => launch.launch_site.site_name === site
       );
     }
